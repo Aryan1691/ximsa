@@ -1,0 +1,68 @@
+.infoField{
+    position: relative;
+    top: 400px;
+    z-index: 1;
+    display: grid;
+    padding-inline: 50px;
+  
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+   background: linear-gradient(35deg,rgb(59, 59, 60),rgb(4, 3, 3),rgb(47, 52, 47));
+   color: white;
+   padding-top: 50px;
+   padding-bottom: 70px;
+   .firstPart{
+    width: 100%;
+   
+    .free{
+        background-color: rgb(227, 2, 2);
+        color: white;
+        font-weight: 500;
+        font-size: 1.1em;
+        border: none;
+        padding: 5px;
+        width: 60px;
+        
+       }
+       .title1{
+        font-size: 2.5em;
+        font-weight: 700;
+        padding-top: 20px;
+       }
+       .title2{
+        font-size: 1.1em;
+        font-weight: 400;
+        padding-top: 10px;
+        color: rgb(188, 191, 193);
+       }
+       .xim{
+        color: lightpink;
+       }
+       .amount{
+        font-size: 1.3em;
+        color: white;
+       }
+   }
+   .title3{
+    width: 100%;
+    color: rgb(188, 191, 193);
+   padding-top: 65px;
+   padding-left: 100px;
+   }
+   .imgofthedata{
+    position: relative;
+    padding-top: 35px;
+    float: right;
+    padding-left: 250px;
+   }
+  
+}
+@media only screen and (max-width:900px){
+    .infoField{
+        .title3{
+            padding-left: 0px;
+        }
+        .imgofthedata{
+            padding-left: 120px;
+        }
+    }
+}

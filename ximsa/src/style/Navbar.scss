@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300;500;600;700;900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    height: 40px;
+    z-index: 99999;
+    color: black;
+    margin-top: 0%;
+    padding-top: 25px;
+    padding-bottom: 24px;
+   
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+
+    align-items: center;
+
+   
+>.nav 
+
+{
+  padding-right: 30px;
+  padding-left: 30px;
+}a{
+ 
+   margin-right: 30px;
+   color: rgb(255, 251, 251);
+   font-weight: bold;
+   margin-right: 60px;
+
+
+position: relative;
+
+}
+>.logo{
+    font-size: 1.9em;
+    font-weight: bolder;
+    padding-inline: 10px;
+    padding-top: 10px;
+    position: relative;
+    left: 30px;
+ 
+    background: linear-gradient(30deg, #210dff, blue, #14ebff, rgb(255, 36, 189),rgb(255, 26, 182));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 1.5s;
+        cursor: pointer;
+        background-position: 0%;
+        &:hover{
+          background-position: 200px;
+        }
+}
+}
+
+ 
+  .sidebar-nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .sidebar-nav a:hover {
+    color: #040303;
+    // border-left: 8px solid rgb(42, 41, 41);
+  
+    
+  }
+  
+
+  .sidebar-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 2000px 0px black;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 20px;
+    width: 30px;
+    
+  }
+
+  .bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 60px;
+    background-color: rgb(108, 29, 255);
+    position:relative;
+    
+   
+    transition: 0.9s;
+   
+    left: 17rem;
+    cursor:pointer;
+    
+    
+  
+  }
+
+  .bar.active:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .bar.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.active:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+    height:100vh;
+    background-color: #ffffff;
+    transition: 0.9s;
+    box-shadow: 0 0 0 1000pc rgba(0,0,0,0.4);
+    border-top-right-radius: 20px;
+  }
+
+  .sidebar.open {
+    left: 0px;
+  }
+
+  .sidebar-nav {
+    padding: 20px;
+    margin-top: 30px;
+    
+  }
+
+  .sidebar-nav a {
+    display: block;
+    color: #000000;
+    
+    text-decoration: none;
+    margin-bottom: 30px;
+    padding-top: 3px;
+ 
+margin-left: -20px;
+padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
+  
+  }
+  .container.mobile {
+    justify-content: flex-start;
+  }
+
+  .logo {
+    font-size: 1.9em;
+    font-weight: bold;
+    background: linear-gradient(30deg, #210dff, blue, #14ebff, rgb(212, 255, 0),rgb(255, 26, 182));
+    background-clip: text;
+    /* For Safari/Chrome */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    // padding-bottom: 30px;
+   
+  }
+  .but {
+    width: auto;
+    font-size: medium;
+    font-weight: bold;
+    padding: 15px;
+    padding-inline: 50px;
+    border-radius: 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background: linear-gradient(
+      90deg,
+      rgb(22, 202, 229),
+      rgb(80, 27, 252),
+      rgb(236, 25, 127),
+      rgb(22, 202, 229)
+    );
+    background-size: 300% 100%;
+    color: white;
+    border: none;
+    transition: background-position 0.9s;
+    cursor: pointer;
+  }
+  
+  .but:hover {
+    background-position: 100% 0;
+  }
+  

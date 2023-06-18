@@ -1,0 +1,167 @@
+@import url(../style/Project.scss);
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    position: relative;
+    
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    background-color: rgb(244, 244, 244);
+    .color{
+     
+        background: linear-gradient(30deg, #210dff, rgb(47, 68, 255), #ff6730, rgb(255, 36, 189),rgb(255, 26, 182));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .text1{
+        font-size: 7em;
+        font-weight: 800;
+    }
+    .text2{
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .text3{
+        margin-top: 30px;
+        font-size: 3em;
+        font-weight: 800;
+    }
+    .text4{
+        font-size: 3em;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+}
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    border-radius: 50px;
+   }
+   
+   .button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg,blue,lightblue,purple);
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    border-radius: 50px;
+   }
+   
+   .button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #000000;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .button:hover span {
+    color: #ffffff;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+@media only screen and (max-width:900px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .groupOfImages{
+        display: none;
+    }
+}
+
+.img1{
+    position: absolute;
+    top: 700px;
+    width: 40%;
+    height: 60%;
+    z-index: 1;
+    right: 28%;
+}
+.img2{
+    position: absolute;
+    top: 800px;
+    width: 30%;
+    height: 40%;
+    z-index: 1;
+    right: 70%;
+}
+.img3{
+    position: absolute;
+    top: 350px;
+    width: 30%;
+    height: 69%;
+    z-index: 1;
+    right: 78%;
+}
+.img4{
+    position: absolute;
+    top: 200px;
+    width: 25%;
+    height: 65%;
+    z-index: 1;
+    right: 0%;
+    
+}
+.img5{
+    position: absolute;
+    top: 800px;
+    width: 25%;
+    height: 35%;
+    z-index: 1;
+    right: 0%;
+}
+@media only screen and (max-width:900px){
+   .main{
+    .text3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   }
+}
+

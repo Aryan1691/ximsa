@@ -1,0 +1,35 @@
+.services{
+    position: relative;
+    top: 200px;
+    padding-inline: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number as needed */
+    background: linear-gradient(35deg,rgb(59, 59, 60),rgb(4, 3, 3),rgb(47, 52, 47));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .serbox{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .serTitle{
+        font-size: 1.4em;
+        font-weight: 600;
+        color: aliceblue;
+    }
+    .serTitle2{
+        font-size: 1.1em;
+        font-size: 300;
+        color: rgb(105, 105, 105);
+    }
+}
+@media only screen and (max-width:900px){
+    .services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}

@@ -1,0 +1,97 @@
+.Advantage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    padding-inline: 30px;
+    position: relative;
+    z-index: 1;
+    top: 500px;
+    background-color: rgb(244, 244, 244);
+    padding-top: 40px;
+  
+  .data1{
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.9s ease-in-out;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 45%;
+    
+  &:hover{
+    transform: skew(180deg)
+  }
+}
+  .name1{
+    font-size: 1.3em;
+    width: 200px;
+    display: flex;
+    // text-align: center;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+}.car {
+  background: linear-gradient(35deg, rgb(59, 59, 60), rgb(4, 3, 3), rgb(47, 52, 47));
+  margin-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+  
+}
+
+.car .carimg {
+  width: 10%;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 483px;
+  text-align: center;
+  color: white;
+  z-index: 2; /* Increase the z-index to appear above other elements */
+padding-top: 30px;
+}
+@media only screen and (max-width:900px){
+  .carousel-text{
+    display: none;
+  }
+  .car{
+    padding: 10px;
+  }
+}
+
+.arrow-prev,
+.arrow-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3; /* Increase the z-index to appear above other elements */
+}
+
+.arrow-prev {
+  left: 20px;
+}
+
+.arrow-next {
+  right: 20px;
+}
+  
